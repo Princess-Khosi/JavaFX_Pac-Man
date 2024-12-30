@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_pacman.controller.Gameplay">
+   <children>
+      <Arc fx:id="PacMan" fill="DODGERBLUE" layoutX="102.0" layoutY="140.0" length="270.0" radiusX="16.0" radiusY="13.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Line fx:id="topBorder" endX="435.66668701171875" endY="-5.7220458984375E-6" layoutX="141.0" layoutY="27.0" startX="-100.0" />
+      <Line fx:id="bottomBorder" endX="435.66668701171875" endY="-5.7220458984375E-6" layoutX="141.0" layoutY="354.0" startX="-100.0" />
+      <Line fx:id="leftBorder" endX="-91.70709228515625" endY="263.2928771972656" layoutX="132.0" layoutY="90.0" startX="-91.70709228515625" startY="-62.29290008544922" />
+      <Line fx:id="rightBorder" endX="426.373779296875" endY="-10.707113265991211" layoutX="151.0" layoutY="37.0" startX="426.373779296875" startY="316.2928771972656" />
+      <Line endX="-96.33331298828125" endY="23.00000762939453" layoutX="309.0" layoutY="101.0" startX="-96.33331298828125" startY="-73.29290008544922" />
+      <Line endX="-96.33331298828125" endY="23.00000762939453" layoutX="195.0" layoutY="331.0" startX="-96.33331298828125" startY="-73.29290008544922" />
+      <Line endX="-96.33331298828125" endY="23.00000762939453" layoutX="536.0" layoutY="331.0" startX="-96.33331298828125" startY="-73.29290008544922" />
+      <Line endX="-174.83331298828125" endY="-6.79290771484375" layoutX="274.0" layoutY="264.0" startX="-84.0" startY="-6.79290771484375" />
+      <Line endX="130.33331298828125" endY="23.000015258789062" layoutX="319.0" layoutY="111.0" startX="257.873779296875" startY="23.000015258789062" />
+      <Button fx:id="PlayButton" layoutX="236.0" layoutY="360.0" mnemonicParsing="false" onAction="#onPlay" text="Play" />
+      <Button fx:id="stop" layoutX="317.0" layoutY="360.0" mnemonicParsing="false" onAction="#onStop" text="Stop" />
+   </children>
+</AnchorPane>
