@@ -88,26 +88,8 @@ public class Gameplay {
         double newX = PacMan.getCenterX() + deltaX;
         double newY = PacMan.getCenterY() + deltaY;
 
-//        if (newX - PacMan.getRadiusX() < leftBorder.getStartX() || newX + PacMan.getRadiusX() > rightBorder.getStartX()) {
-//            deltaX = 0;
-//        }
-//        if (newY - PacMan.getRadiusY() < topBorder.getStartY() || newY + PacMan.getRadiusY() > bottomBorder.getStartY()) {
-//            deltaY = 0;
-//        }
         PacMan.setCenterX(newX);
         PacMan.setCenterY(newY);
     }
-
-//    @FXML
-//    private void onChangeDirection(){
-//        Scene.setOnKeyPressed(keyEvent -> {
-//            switch (keyEvent.getCode()){
-//                case UP -> PacMan.setRotate(0);
-//                case DOWN -> PacMan.setRotate(180);
-//                case LEFT -> PacMan.setRotate(270);
-//                case RIGHT -> PacMan.setRotate(90);
-//            }
-//        });
-//    }
 
 }
